@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: ui
+  name: ui
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      app: ui
+  template:
+    metadata:
+      labels:
+        app: ui
+    spec:
+      containers:
+      - image: task-manager-ui
+        name: ui
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8190
+          name: ui
+        env:
+        - name: DISABLE_SECURITY
+          value: "foo-bar-baz"

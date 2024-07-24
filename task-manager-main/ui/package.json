@@ -1,0 +1,31 @@
+{
+  "name": "task-manager",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.9.10",
+    "@apollo/server": "^4.10.2",
+    "@vueuse/core": "^10.9.0",
+    "@vue/apollo-composable": "^4.0.2",
+    "@apollo/subgraph": "^2.7.2",
+    "@vue/compat": "^3.4.21",
+    "graphql": "^16.8.1",
+    "graphql-tag": "^2.12.6",
+    "bootstrap-vue": "^2.23.1",
+    "socket.io-client": "^4.7.4",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vue-tsc": "^1.8.27"
+  }
+}
